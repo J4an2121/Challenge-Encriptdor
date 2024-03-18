@@ -1,0 +1,58 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Encripatdor challenge</title>  <!-- TITULO DE LA PAGINA --> 
+    
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="imagenes/img5.png" alt="logo">  <!-- SE USA PARA AGREGAR IMAGENES Y LOGO -->
+    </header>
+
+    <main> <!-- REPRESENTA EL CONTENIDO PRINCIPAL DE BODY -->
+        <section class="seccion1">  <!-- REPRESENTA UNA SECCIÓN GENÉRICA INDEPENDIENTE DE UN DOCUMENTO, QUE NO TIENE UN ELEMENTO SEMÁNTICO MÁS ESPECÍFICO PARA REPRESENTARLA --> 
+            <div class="contenedor-cajadetexto">
+                <textarea placeholder="Ingrese el texto aquí" class="cajatexto"></textarea>  <!-- CAJA DONDE VAMOS A INGRESAR EL TEXTO  -->
+            </div>
+            <div class="alerta">
+                <img src="imagenes/img2.png" alt="alerta"> <!-- AGREGAMOS OTRA IMAGEN -->
+                <p>Solo letras minúsculas y sin acentos</p> <!-- USAMOS PARA PÁRRAFO -->
+            </div>
+            <div class="contenedor-botones">
+                 <input type="button" class="btn-encriptar" value="Encriptar"> <!-- USAMOS PARA CREAR UN BOTÓN -->
+                 <input type="button" class="btn-desencriptar" value="Desencriptar"> <!-- USAMOS PARA CREAR UN BOTÓN -->
+            </div>
+        </section>
+        <section class="seccion2"> <!-- EN ESTE BLOQUE PARA INGRESAR OTRA IMAGEN Y A CONTENER MENSAJE -->
+            <div class="contenedor-figura">
+               <header>
+                <img src="imagenes/img3.png" alt="figura">
+                </header> 
+
+              <div class="contenedor-parrafo">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que vamos a encriptar o desencriptar.</p>
+              </div> 
+
+              <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar"> 
+             </div>
+
+            </div>
+
+            <div class="contenedor-resultado">
+               <p class="texto-resultado"></p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
